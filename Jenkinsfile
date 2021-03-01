@@ -28,7 +28,7 @@ pipeline {
                         [
                             artifactId: 'jenkins-example', 
                             classifier: '', 
-                            file: '/var/lib/jenkins/workspace/Jenkins-Pipeline@tmp/withMavendaa5930a/pipeline-maven-spy.jar', 
+                            file: '/var/lib/jenkins/workspace/Jenkins-Pipeline/target/Jenkins-Pipeline.jar', 
                             type: 'jar'
                         ]
                     ], 

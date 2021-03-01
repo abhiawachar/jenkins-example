@@ -28,7 +28,8 @@ pipeline {
                         [
                             artifactId: 'jenkins-example', 
                             classifier: '', 
-                            file: '/var/lib/jenkins/workspace/Jenkins-Pipeline/target/Jenkins-Pipeline.jar', 
+                            file: '/workspace/Jenkins-Pipeline/target/Jenkins-Pipeline-1.0-1.war',
+                           
                             type: 'jar'
                         ]
                     ], 

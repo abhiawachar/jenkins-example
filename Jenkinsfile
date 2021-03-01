@@ -28,7 +28,7 @@ pipeline {
                         [
                             artifactId: 'jenkins-example', 
                             classifier: '', 
-                            file: 'target/jenkins-example-1.0-SNAPSHOT.war', 
+                            file: 'maven-nexus-repo.war', 
                             type: 'war'
                         ]
                     ], 

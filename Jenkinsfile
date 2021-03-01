@@ -28,8 +28,8 @@ pipeline {
                         [
                             artifactId: 'jenkins-example', 
                             classifier: '', 
-                            file: 'target/jenkins-example-1.0.1.war', 
-                            type: 'war'
+                            file: '/var/lib/jenkins/workspace/Jenkins-Pipeline@tmp/withMavendaa5930a/pipeline-maven-spy.jar', 
+                            type: 'jar'
                         ]
                     ], 
                     credentialsId: 'nexus-user-credentials', 

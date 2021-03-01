@@ -28,7 +28,7 @@ pipeline {
                         [
                             artifactId: 'jenkins-example', 
                             classifier: '', 
-                            file: 'maven-nexus-repo.war', 
+                            file: 'target/jenkins-example-1.0.1.war', 
                             type: 'war'
                         ]
                     ], 
@@ -38,7 +38,7 @@ pipeline {
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'heeng-aawachar.headquarters.healthedge.com:8081/repository/maven-nexus-repo/', 
-                    version: '1.0-SNAPSHOT'
+                    version: '1.0.1'
                 }
             }
         }

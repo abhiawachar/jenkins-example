@@ -18,6 +18,13 @@ pipeline {
                     sh 'mvn test'
                 }
             }
-        }       
+        }
+        stage ('Nexus Upload') {
+            steps {
+                withMaven(maven : 'maven-3') {
+                    sh 'mvn deploy'
+                }
+            }
+        }
     }
 }
